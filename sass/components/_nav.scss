@@ -1,0 +1,33 @@
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  gap: 50px;
+  margin-right: 318px;
+}
+
+.header-menu-second {
+  display: flex;
+  gap: 30px;
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: var(--main-font-size);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--header-link-color);
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition: color var(--trans);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

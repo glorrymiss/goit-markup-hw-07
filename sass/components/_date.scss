@@ -1,0 +1,26 @@
+.date {
+  font-weight: 500;
+  font-size: var(--main-font-size);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--base-text-color);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  display: flex;
+  align-items: center;
+  fill: var(--color-icon);
+
+  transition: color var(--trans), fill var(--trans);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+}
+
+.icon-tel,
+.icon-sms {
+  margin-right: 10px;
+}

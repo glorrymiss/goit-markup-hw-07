@@ -1,0 +1,29 @@
+/*footer*/
+
+.footer {
+  background-color: var(--back-color-footer);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.footer-item {
+  margin-bottom: 9px;
+}
+
+.none-botton {
+  margin-bottom: 0;
+}

@@ -1,0 +1,35 @@
+/*  Наші клієнти  */
+.title-clients {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--color-title-secondary);
+
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  gap: 30px;
+}
+
+.clients-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--color-icon);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--color-icon);
+
+  transition: border var(--trans), fill var(--trans);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
+  }
+}
