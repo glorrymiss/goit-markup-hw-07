@@ -98,9 +98,7 @@
   position: relative;
 
   font-weight: 400;
-  font-size: var(--main-font-size);
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(var(--main-font-size), 1.71, 0.03em);
 
   color: var(--base-text-color);
 }
@@ -118,9 +116,9 @@
   position: absolute;
   top: 50%;
   left: -15px;
-  transform: translateY(-50%);
+  transform: translateY(-60%);
 
-  display: inline-block;
+  display: block;
   width: 16px;
   height: 15px;
 
