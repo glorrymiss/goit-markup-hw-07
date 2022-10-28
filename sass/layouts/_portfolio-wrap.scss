@@ -5,12 +5,12 @@
   gap: 30px;
 }
 
-.item-portfolio {
+.menu-portfolio__item {
   background-color: var(--general-back-color);
   width: calc((100% - 60px) / 3);
 }
 
-.link-portfolio {
+.menu-portfolio__link {
   display: block;
 
   transition: box-shadow var(--trans);
@@ -21,7 +21,7 @@
   }
 }
 
-.info-portfolio {
+.info-container {
   display: flex;
   flex-direction: column;
   padding: 20px 24px;
@@ -29,7 +29,7 @@
   border-top: none;
 }
 
-.title-name-portfolio {
+.info-container__title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -38,7 +38,7 @@
   margin-bottom: 4px;
 }
 
-.text-portfolio {
+.info-container__text {
   font-size: var(--second-font-size);
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -46,13 +46,13 @@
 }
 
 /*виїздні вікна в портфоліо*/
-.new-window {
+.box-card {
   position: relative;
 
   overflow: hidden;
 }
 
-.text-window {
+.box-card__text {
   position: absolute;
   top: 0;
   left: 0;
@@ -72,7 +72,7 @@
 
   overflow: auto;
 
-  .link-portfolio:hover & {
+  .menu-portfolio__link:hover & {
     transform: translateY(0);
   }
 }

@@ -1,25 +1,16 @@
-.footer-address,
-.footer-mail,
-.footer-tel {
+.footer-address__link {
   font-style: normal;
   font-size: var(--main-font-size);
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-
-.footer-address {
   color: var(--general-back-color);
-}
-
-.footer-mail,
-.footer-tel {
-  color: var(--footer-mail-tel-color);
-}
-
-.show {
   transition: color var(--trans);
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
+}
+
+.footer-address__link--light {
+  color: var(--footer-mail-tel-color);
 }

@@ -5,11 +5,7 @@
 @import "./utils/section";
 @import "./utils/hidden";
 
-@import "./components/header";
-@import "./components/nav";
-@import "./components/logo";
-@import "./components/date";
-
+@import "./layouts/header";
 @import "./layouts/hero";
 @import "./layouts/benefits";
 @import "./layouts/our-work";

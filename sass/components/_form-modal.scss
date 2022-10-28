@@ -1,7 +1,7 @@
 /*--form-modal--window*/
 
 /*текст-заголовок*/
-.form-windows-text {
+.modal-form__text {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -13,7 +13,7 @@
   margin-bottom: 12px;
 }
 /*1-3 поля*/
-.form-field {
+.modal-form__field {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -34,7 +34,7 @@
 }
 
 /*іконки в полі*/
-.icon-form {
+.modal-form__icon {
   position: absolute;
   top: 50%;
   left: 15px;
@@ -46,25 +46,21 @@
   &:focus {
     fill: var(--accent-color);
   }
-  .form-field input:hover + &,
-  .form-field input:focus + & {
+  .modal-form__field input:hover + &,
+  .modal-form__field input:focus + & {
     fill: var(--accent-color);
   }
 }
 
-.form-field > .icon-form:hover .form-input {
-  fill: var(--accent-color);
-}
-
-.form-field input:hover,
-.form-field input:focus {
+.modal-form__field input:hover,
+.modal-form__field input:focus {
   outline: transparent;
   border: 1px solid var(--accent-color);
 }
 
 /*поле-коментар*/
 
-.form-field textarea {
+.modal-form__field textarea {
   margin-top: 4px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -89,12 +85,12 @@
 }
 
 /*рядок-згода з умовами*/
-.check-input {
+.modal-form__check {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
-.check {
+.modal-form__label {
   display: flex;
   align-items: center;
   gap: 7px;
@@ -111,16 +107,16 @@
   color: var(--base-text-color);
 }
 
-.a-text {
+.modal-form__condition {
   color: var(--accent-color);
   text-decoration: 1px solid var(--accent-color);
 }
 
-.link-form {
+.modal-form__link {
   text-decoration: underline solid var(--accent-color);
 }
 
-.icon-check {
+.modal-form__icon-check {
   position: absolute;
   top: 50%;
   left: -15px;
@@ -132,16 +128,17 @@
 
   border: 2px solid var(--color-btn-name);
   border-radius: 2px;
-  .check-input:checked + & {
+  .modal-form__check:checked + & {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
     background-image: url(../images/icon-check.svg);
-    background-size: contain;
+
+    background-size: cover;
     background-origin: border-box;
   }
 }
 
-.btn-form-modal {
+.form-btn {
   display: block;
   margin: 30px auto 0 auto;
   padding: 10px 52px;

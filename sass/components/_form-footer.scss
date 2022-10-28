@@ -1,9 +1,9 @@
 /*--forms-footer-*/
-.box-footer-form {
+.form-container {
   display: flex;
 }
 
-.form-title {
+.form-footer__title {
   font-weight: 700;
   font-size: var(--main-font-size);
   line-height: 1.14;
@@ -14,7 +14,7 @@
   margin-bottom: 20px;
 }
 
-.form-input {
+.form-container__input {
   margin-right: 12px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -26,25 +26,24 @@
   padding-left: 18px;
 
   transition: border var(--trans), color var(--trans);
+  & input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
-.form-input input::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.form-label input:hover,
-.form-label input:focus {
+.form-container__label input:hover,
+.form-container__label input:focus {
   outline: transparent;
   border: 1px solid rgba(255, 255, 255, 0.6);
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-btn {
+.form-container__btn {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -71,6 +70,6 @@
   }
 }
 
-.send {
+.form-container__btn {
   fill: var(--color-icon-focus);
 }

@@ -6,13 +6,13 @@
   padding-bottom: 60px;
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   gap: 70px;
   align-items: baseline;
 }
 
-.footer-logo {
+.footer__logo {
   display: inline-block;
   margin-bottom: 20px;
   margin-right: 0;
@@ -20,10 +20,9 @@
   padding-bottom: 0;
 }
 
-.footer-item {
+.footer-address__item {
   margin-bottom: 9px;
-}
-
-.none-botton {
-  margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

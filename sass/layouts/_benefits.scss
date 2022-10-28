@@ -1,9 +1,9 @@
-.main-menu {
+.benefits-menu {
   display: flex;
   gap: 30px;
 }
 
-.main-item {
+.benefits-menu__item {
   flex-basis: calc((100% - 90px) / 4);
   &::before {
     display: block;
@@ -31,7 +31,7 @@
   }
 }
 
-.third-title {
+.benefits-menu__title {
   font-size: var(--main-font-size);
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -41,7 +41,7 @@
   margin-bottom: 10px;
 }
 
-.main-text {
+.benefits-menu__text {
   font-size: var(--main-font-size);
   line-height: 1.71;
   letter-spacing: 0.03em;
