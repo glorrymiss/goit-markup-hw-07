@@ -1,9 +1,10 @@
 @import "./utils/variables";
-@import "./utils/reset";
-@import "./utils/common";
-@import "./utils/container";
-@import "./utils/section";
+@import "./base/reset";
+@import "./base/common";
+@import "./components/container";
+@import "./components/section";
 @import "./utils/hidden";
+@import "./utils/mixin";
 
 @import "./layouts/header";
 @import "./layouts/hero";

@@ -5,9 +5,7 @@
 
 .form-footer__title {
   font-weight: 700;
-  font-size: var(--main-font-size);
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(var(--main-font-size), 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--footer-logo-color);
 
@@ -28,10 +26,7 @@
   transition: border var(--trans), color var(--trans);
   & input::placeholder {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-
+    @include font(16px, 1.25, 0.03em);
     color: rgba(255, 255, 255, 0.6);
   }
 }
@@ -51,10 +46,8 @@
 
   font-family: inherit;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
+  @include font(16px, 1.68, 00.06em);
   text-align: center;
-  letter-spacing: 0.06em;
 
   color: var(--color-icon-focus);
   background-color: var(--accent-color);

@@ -32,10 +32,8 @@
 
 .block__text {
   font-weight: 700;
-  font-size: var(--main-font-size);
-  line-height: 16px;
+  @include font(var(--main-font-size), 1.14, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: var(--color-icon-focus);

@@ -20,6 +20,10 @@
   padding-bottom: 0;
 }
 
+.logo-part--light {
+  color: var(--footer-logo-color);
+}
+
 .footer-address__item {
   margin-bottom: 9px;
   &:last-child {

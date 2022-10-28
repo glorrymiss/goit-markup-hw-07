@@ -16,9 +16,8 @@
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include font(26px, 1.19, 0.03em);
+
   color: var(--accent-color);
 }
 
@@ -28,12 +27,8 @@
   padding-bottom: 25px;
 }
 
-.logo--dark {
+.logo-part--dark {
   color: var(--header-logo-color);
-}
-
-.logo--light {
-  color: var(--footer-logo-color);
 }
 
 .menu {
@@ -49,9 +44,7 @@
 
 .menu__link {
   font-weight: 500;
-  font-size: var(--main-font-size);
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(var(--main-font-size), 1.14, 0.02em);
   color: var(--header-link-color);
 
   display: block;
@@ -82,9 +75,7 @@
 
 .menu-second__link {
   font-weight: 500;
-  font-size: var(--main-font-size);
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(var(--main-font-size), 1.14, 0.02em);
 
   padding-top: 32px;
   padding-bottom: 32px;

@@ -1,8 +1,7 @@
 .footer-address__link {
   font-style: normal;
-  font-size: var(--main-font-size);
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(var(--main-font-size), 1.71, 0.03em);
+
   color: var(--general-back-color);
   transition: color var(--trans);
   &:hover,

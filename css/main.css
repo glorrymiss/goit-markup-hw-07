@@ -129,12 +129,8 @@ body {
   padding-bottom: 25px;
 }
 
-.logo--dark {
+.logo-part--dark {
   color: var(--header-logo-color);
-}
-
-.logo--light {
-  color: var(--footer-logo-color);
 }
 
 .menu {
@@ -220,8 +216,8 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--general-back-color);
   margin-bottom: 30px;
@@ -331,9 +327,9 @@ body {
 .block__text {
   font-weight: 700;
   font-size: var(--main-font-size);
-  line-height: 16px;
-  text-align: center;
+  line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--color-icon-focus);
 }
@@ -345,8 +341,8 @@ body {
 .title {
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--color-title-secondary);
 }
 
@@ -503,7 +499,7 @@ body {
 
 .info-container__text {
   font-size: var(--second-font-size);
-  line-height: 1.88;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--base-text-color);
 }
@@ -553,6 +549,10 @@ body {
   margin-right: 0;
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.logo-part--light {
+  color: var(--footer-logo-color);
 }
 
 .footer-address__item {
@@ -673,9 +673,9 @@ body {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
-  text-align: center;
+  line-height: 1.68;
   letter-spacing: 0.06em;
+  text-align: center;
   color: var(--color-icon-focus);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -754,8 +754,8 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--color-btn-name);
   margin-bottom: 12px;
 }

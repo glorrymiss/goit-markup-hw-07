@@ -8,9 +8,7 @@
 .menu-btn__button {
   font-family: inherit;
   font-weight: 500;
-  font-size: var(--btn-size);
-  line-height: 1.62;
-  letter-spacing: 0.03em;
+  @include font(var(--btn-size), 1.62, 00.03em);
   background-color: var(--back-btn-portfolio);
   color: var(--color-btn-name);
 
